@@ -185,6 +185,19 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">The purpose of lab 1 was to learn how to program the Arduino and set up the light sensing component for the light-following robot. The first task for lab 1 was becoming familiar with Arduino IDE. A small program was then run to blink the onboard LED, and understand how the turning on and off, and delays within the program impact the LED on the Arduino. In order to complete this task the Arduino nano was mounted on the LED board, and connected to the computer so the code could be run. </p>
+                                    <p class="mb-5">Put something about Vref here maybe?</p>
+                                    <p class="mb-5">The circuit used for this lab was a voltage divider. This can be seen in the image below. </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Circuit.PNG" alt="" />
+                                    <p class="mb-5">This circuit was created on the breadboard using a 10kOhm resistor and the photoresistor. Vin was connected to the +5V pin on the Arduino, and the Arduino was used to ground the circuit and breadboard as well. Vout was read to the A) pin on the Arduino. The completed circuit can be seen in the image below. </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/20210220_161107.jpg" alt="" />
+                                    <p class="mb-5">The final robot required two circuits similar to the one shown above, one for each photoresistor, or “eye”. The second “eye” was connected to pin A1, as can be seen in the image below.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/EyesCircuit.jpg" alt="" />
+                                    <p class="mb-5">In order to code the robot, there has to be a way to determine where brighter lights are located. This was done by finding the photoresistor values for each eye, and then normalizing them. This normalization process can be seen below.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/equation.PNG" alt="" />
+                                    <p class="mb-5">The process of normalizing means this robot can function in locations that have different lighting conditions. The code for this section reads the values on the A0 and A1 pins, as the left and right photoresistor values respectively. It then calculates the normalized values for left and right, and returns them. These will eventually be used to indicate how the robot should move, and where it should go. </p>
+                                  
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/20210220_161107.jpg" alt="" />
                                     <!-- Portfolio Modal - Text-->

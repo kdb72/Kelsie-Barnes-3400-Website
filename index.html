@@ -369,9 +369,23 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ComingSoon.jpg" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lab 4 coming soon.</p>
+                                    <p class="text-left">Lab 4 involves bringing together all components of previous labs. The first part of Lab 4 was placing the ultrasonic sensor on the front of the robot. The trigger and echo pin were hooked up, and the sensor was given power and grounded. The sensor works by sending ultrasonic waves out from the sensor. These waves bounce off objects, and the sensor measures the time it takes for the wave to return, and calculates the distance to the object from this information. The ultrasonic sensor placement can be seen below.   </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Sensor.jpg" alt="" />
+                                    <p class="text-left">Once the ultrasonic sensor was attached, the arduino was coded to read information from it. This code used two digital pins for the emitter and the receiver, and then converted the result into centimeters, using an equation found in the lecture notes. Once this code was complete, the accuracy of the sensor was tested. This was done by placing an object a known distance away from the sensor, and printing what the sensor was reading at different distances. This yielded very accurate results as can be seen in the table below. The blue line plots the distance measured from the US sensor as a function of actual distance. The orange line is the difference between these two values. Since the orange line is very small and flat, it indicates that the ultrasonic sensor is consistently giving accurate data.   </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Canvas1.1Graph-MeasurementAndErrorGraph.jpg" alt="" />
+                                    <p class="text-left">The demo for the first part of lab one was done on a course with the robot and objects placed similar to the diagram below. </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Demo1Figure.jpg" alt="" />
+                                    <p class="text-left">An image of the actual setup that was used can be seen below. </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Setup.jpg" alt="" />
+                                    <p class="text-left">The first demo completed in lab 4 was the robot turning in a circle and locating objects. The robot starts motionless with the LED off, and is listening. When it hears a frequency of 550 Hz, it turns around slowly, and measures distances. When it senses obstacle 1 approximately 30 cm away it turns on the LED. Once the obstacle is no longer in sight the LED turns off. When it sees obstacle 2 approximately 60 cm away the LED turns on, and once object 2 is no longer in sight it turns the LED off and the robot comes to a stop. It then returns to listening and will remain that way indefinitely. The video of the robot performing this task is seen below. </p>
+
+                                    <!-- Portfolio Modal - Video of wheels-->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lmLhegO7L2s" allowfullscreen></iframe>
+                                    </div> 
+                                    <p class="font-weight-bold">  </p>
+
+
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
